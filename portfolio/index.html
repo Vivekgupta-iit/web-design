@@ -146,31 +146,62 @@
                 </div>
             </section>
 
-            <!--===== WORK =====-->
-            <section class="work section" id="Work">
-                <h2 class="section-title">Projects</h2>
+          <!--===== WORK =====-->
 
-                <div class="work__container bd-grid">
-                    <a href="" class="work__img">
-                        <img src="assets/img/work1.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work2.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work3.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work4.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work5.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work6.jpg" alt="">
-                    </a>
-                </div>
-            </section>
+          <section class="work section" id="Work">
+              <h2 class="section-title">Projects</h2>
+          
+              <div class="work__container bd-grid">
+                  <a href="new_project.html" class="work__img" title="Intrusion-Detection-System using CISCO Packet Tracer">
+                      <img src="assets/img/work1.jpg" alt="">
+                  </a>
+                  <a href="project2.html" class="work__img" title="Project 2">
+                      <img src="assets/img/work2.jpg" alt="">
+                  </a>
+                  <a href="project3.html" class="work__img" title="Project 3">
+                      <img src="assets/img/work3.jpg" alt="">
+                  </a>
+                  <a href="project4.html" class="work__img" title="Project 4">
+                      <img src="assets/img/work4.jpg" alt="">
+                  </a>
+                  <a href="project5.html" class="work__img" title="Project 5">
+                      <img src="assets/img/work5.jpg" alt="">
+                  </a>
+                  <a href="project6.html" class="work__img" title="Project 6">
+                      <img src="assets/img/work6.jpg" alt="">
+                  </a>
+              </div>
+          </section>
+          
+          <style>
+              /* CSS for tooltip */
+              .work__img {
+                  position: relative;
+                  display: inline-block;
+              }
+          
+              .work__img:hover::before {
+                  content: attr(title);
+                  position: absolute;
+                  top: 100%;
+                  left: 50%;
+                  transform: translateX(-50%);
+                  background-color: rgba(0, 0, 0, 0.8);
+                  color: #fff;
+                  padding: 4px 8px;
+                  border-radius: 4px;
+                  white-space: nowrap;
+                  z-index: 9999;
+                  opacity: 0;
+                  transition: opacity 0.3s ease;
+              }
+          
+              .work__img:hover::before {
+                  opacity: 1;
+              }
+          </style>
+
+
 
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
